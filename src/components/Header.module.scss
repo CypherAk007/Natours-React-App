@@ -1,0 +1,14 @@
+.header{
+    background-image:linear-gradient(to right bottom, rgba(126, 213, 111, 0.806),rgba(85, 197, 122, 0.806)) , url(../assets/img/hero-small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // z-index: -1;
+    clip-path: polygon(0 0, 100% 0%, 100% 75vh, 0% 100%);
+    // linear-gradient(to right bottom,rgba(var(--color-primary-light),0.8),rgba(var(--color-primary),0.8))
+}
+.heading{
+    
+}
+.heading-primary{
+    
+}
