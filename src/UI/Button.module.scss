@@ -1,17 +1,51 @@
-.btn:link,
-.btn:visited{
+.btn{
     position: relative;
-}
+    /* display: inline-block; makes the element as seprate block used when we need padding and margin */
+    &:link,
+    &:visited{
+        
+        text-transform: uppercase;
+        padding: 1.5rem 4rem;
+        text-decoration: none;
+        border-radius: 10rem;
+        display: inline-block;
+        transition: all .2s;
+        position: relative;
+    }
+    /* box-shadow: 0 10px 20px; -> (x , y, blur) */
+    &:hover{
+        transform: translateY(-1rem);
+        box-shadow: 0 1rem 2rem rgba(#000, .2);
 
-.btn::after{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    transition: all .4s;
-    background-color: wheat;
+
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active{
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba(#000, .2);
+    }
+    &--white{
+        background-color:white;
+        color: grey;
+
+        &::after{
+            background-color: white;
+        }
+    }
+    
+    &:after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
 }
