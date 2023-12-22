@@ -24,6 +24,9 @@ export default {
       boxShadow:{
         'button':'0 10px 20px rgba(0,0,0,0.2)',
         'dark':'0 2.5rem 4rem rgba(0,0,0,.5);'
+      },
+      backgroundImage:{
+        'mountain':"url('/src/assets/img/nat-4')",
       }
     },
   },

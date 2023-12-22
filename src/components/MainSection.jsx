@@ -5,7 +5,7 @@ import i3 from '../assets/img/nat-3-large.jpg'
 
 const MainSection = ()=>{
     return (
-        <div className={` flex flex-col tracking-widest items-center text-red -bg--color-grey-light-1 min-h-[90rem] -mt-[19rem]`}>
+        <div className={` flex flex-col tracking-widest items-center text-red -bg--color-grey-light-1 min-h-[105rem] -mt-[19rem]`}>
             <div className={`pt-[25rem] text-6xl inline-block bg-gradient-to-r -from--color-primary-light -to--color-primary-dark bg-clip-text text-transparent font-semibold uppercase`}>exciting tours for adventurous people</div>
             <div className={`mt-[10rem] flex justify-between  gap-20 px-[10rem] text-2xl self-stretch  `}>
                 <div className={`basis-[50%] leading-relaxed flex flex-col items-start font-medium`}>
