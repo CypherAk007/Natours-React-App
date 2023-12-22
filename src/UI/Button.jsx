@@ -8,7 +8,6 @@ const Button  = (props)=>{
          hover:-translate-y-4 hover:shadow-button 
          active:-translate-y-[1px] active:shadow-[0_5px_10px_rgba(0,0,0,.2)]
 
-         
           `}
         >
             {props.children}
