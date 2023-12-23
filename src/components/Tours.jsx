@@ -108,7 +108,7 @@ const Tours = () => {
             </div>
             <div className={`flex `}>
 
-            <Button green={true} className={` -bg--color-primary text-white my-36 mx-auto `}>Discover all tours</Button>
+            <Button green={true} className={` -bg--color-primary text-white mt-36 mx-auto `}>Discover all tours</Button>
             </div>
         </section>
     )
