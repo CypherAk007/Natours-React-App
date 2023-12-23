@@ -14,7 +14,7 @@ const Header = ()=>{
                     <span className={` ${classes['heading-primary-main']} block text-[6rem] font-normal tracking-[35px]`}>Outdoors</span>
                     <span className={` ${classes['heading-primary-sub']} block text-[2rem] font-bold tracking-[17px]`}>is where life happens</span>
                 </h1>
-                <Button>Discover our tours</Button>
+                <Button >Discover our tours</Button>
             </div>
 
             

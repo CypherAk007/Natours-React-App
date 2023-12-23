@@ -4,7 +4,7 @@ const Button  = (props)=>{
     return (
         <button 
         className=
-        {` ${props.className} ${classes.btn} ${classes['btn--white']} transition-all inline-block text-3xl uppercase bg-white text-[#777] px-12 py-6  rounded-full
+        {` ${props.className} ${classes.btn} ${props.green===true?classes['btn--green']:classes['btn--white']}  transition-all inline-block text-3xl uppercase   px-12 py-6  rounded-full
          hover:-translate-y-4 hover:shadow-button 
          active:-translate-y-[1px] active:shadow-[0_5px_10px_rgba(0,0,0,.2)]
 
