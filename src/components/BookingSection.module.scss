@@ -59,7 +59,21 @@
         border-bottom: 3px solid  #ff7730;
 
     }
-    &__label{
+    // + adjecent sibling selector but ~ any sibling selector first input(top one) next (label)
+    &__input:placeholder-shown + &__label{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
 
+    }
+
+
+    &__label{
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
     }
 }
