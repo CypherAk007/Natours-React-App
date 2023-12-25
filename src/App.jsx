@@ -5,6 +5,7 @@ import Feature from "./components/Feature";
 import Tours from "./components/Tours";
 import Stories from "./components/Stories";
 import BookingSection from "./components/BookingSection";
+import Footer from "./components/Footer";
 const App = ()=>{
   return (
     <div className={`${classes.app} p-12`}>
@@ -14,6 +15,7 @@ const App = ()=>{
         <Tours></Tours>
         <Stories></Stories>
         <BookingSection></BookingSection>
+        <Footer></Footer>
     </div>
   )
 }
