@@ -35,14 +35,7 @@
             background-color: white;
         }
     }
-    &--greeen{
-        background-color:#7ed56f;
-        color: grey;
-
-        &::after{
-            background-color:#28b485;
-        }
-    }
+    
     
     &:after{
         content: "";
@@ -55,5 +48,13 @@
         left: 0;
         z-index: -1;
         transition: all .4s;
+    }
+}
+.btn--green{
+    background-color:#7ed56f;
+    color: white;
+
+    &::after{
+        background-color:#28b485;
     }
 }

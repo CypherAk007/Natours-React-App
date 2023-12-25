@@ -83,6 +83,11 @@
         width: 49%;
         display: inline-block;
     }
+    
+    // Hide the actual input button 
+    &__radio-input{
+        display: none;
+    }
 
     &__radio-label{
         font-size: 1.6rem;
@@ -115,8 +120,23 @@
             border-radius: 50%;
             transform: translate(-50%,-50%);
             opacity: 0;
-
+            transition: opacity .2s;
 
         }
+
+        
+    }
+
+    // 1->SIBLING <input type='radio' className={`${classes['form__radio-input']}`} id="large" name='size'></input>
+    // 2->SIBLING<label for='large' className={`${classes['form__radio-label']}`}>
+    //  3-> CHILD OF SIBLING WE SELECT <span className={`${classes['form__radio-button']}`}></span>
+    //             Large tour group
+    // </label>
+
+// :checked COMES FOR EVERY CHECKBOX/RADIOBUTTON
+    //   -1-                      -2-          -CHILD OF 2- 
+    &__radio-input:checked ~ &__radio-label &__radio-button::after{
+        // ONCE CHECKED WE BRING BACK THE opacity;
+        opacity: 1;
     }
 }

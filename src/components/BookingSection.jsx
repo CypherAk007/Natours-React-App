@@ -1,3 +1,4 @@
+import Button from '../UI/Button';
 import classes from './BookingSection.module.scss'
 
 
@@ -27,6 +28,9 @@ const BookingSection = ()=>{
                             <label for='large' className={`${classes['form__radio-label']}`}>
                             <span className={`${classes['form__radio-button']}`}></span>
                                 Large tour group</label>
+                        </div>
+                        <div className={`${classes['form__group']} mt-16`}>
+                            <Button green={true}>Next Step &rarr;</Button>
                         </div>
                     </form>
                 </div>
