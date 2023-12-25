@@ -16,6 +16,18 @@ const BookingSection = ()=>{
                             <input type='email' className={`${classes['form__input']}`} placeholder='Email Address' id="email" required></input>
                             <label for='email' className={`${classes['form__label']}`}>Email Address</label>
                         </div>
+                        <div className={`${classes['form__radio-group']}`}>
+                            <input type='radio' className={`${classes['form__radio-input']}`}  id="small" name='size'></input>
+                            <label for='small' className={`${classes['form__radio-label']}`}>
+                                <span className={`${classes['form__radio-button']}`}></span>
+                                Small tour group</label>
+                        </div>
+                        <div className={`${classes['form__radio-group']}`}>
+                            <input type='radio' className={`${classes['form__radio-input']}`} id="large" name='size'></input>
+                            <label for='large' className={`${classes['form__radio-label']}`}>
+                            <span className={`${classes['form__radio-button']}`}></span>
+                                Large tour group</label>
+                        </div>
                     </form>
                 </div>
             </div>

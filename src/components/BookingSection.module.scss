@@ -43,6 +43,8 @@
         width: 97%;
         border-bottom:  3px solid transparent;
         color: inherit;
+        display: block;
+        transition: all .3s;
         &::-webkit-input-placeholder{
             color: #999;
         }
@@ -75,5 +77,15 @@
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+    }
+
+    &__radio-group{
+        width: 49%;
+        display: inline-block;
+    }
+
+    &__radio-label{
+        font-size: 1.6rem;
+        cursor: pointer;
     }
 }
