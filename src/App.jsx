@@ -6,9 +6,11 @@ import Tours from "./components/Tours";
 import Stories from "./components/Stories";
 import BookingSection from "./components/BookingSection";
 import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
 const App = ()=>{
   return (
     <div className={`${classes.app} p-12`}>
+        <Navigation></Navigation>
         <Header></Header>
         <MainSection></MainSection>
         <Feature></Feature>
