@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 const App = ()=>{
   return (
-    <div className={`${classes.app} p-12`}>
+    <div className={`${classes.app} p-12 tab-port:p-0`}>
         <Navigation></Navigation>
         <Header></Header>
         <MainSection></MainSection>

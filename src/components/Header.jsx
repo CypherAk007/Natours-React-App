@@ -11,8 +11,8 @@ const Header = ()=>{
             </div>
             <div className={`absolute top-[40%] left-1/2 -translate-y-2/4 -translate-x-2/4 text-center`}>
                 <h1 className={`${classes['heading-primary']} text-white uppercase mb-32`}>
-                    <span className={` ${classes['heading-primary-main']} block text-[6rem] font-normal tracking-[35px]`}>Outdoors</span>
-                    <span className={` ${classes['heading-primary-sub']} block text-[2rem] font-bold tracking-[17px]`}>is where life happens</span>
+                    <span className={` ${classes['heading-primary-main']} block text-[6rem] font-normal tracking-[3.5rem] phone:tracking-[1rem] phone:text-[5rem]`}>Outdoors</span>
+                    <span className={` ${classes['heading-primary-sub']} block text-[2rem] font-bold tracking-[1.70rem]  phone:tracking-[.5rem] `}>is where life happens</span>
                 </h1>
                 <Button >Discover our tours</Button>
             </div>

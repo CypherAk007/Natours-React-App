@@ -34,6 +34,10 @@ color: #777;
 
 
 /* Only this works - App.js Scss not working */
+/* we write higest media querry first and then lower once
+Ex- 700px  both 1200 and 900 apply as both apply last declaration will get applied
+desktop first approach*/
+
 @media (max-width: 1200px) {
     html{
         font-size: 56.25%; 

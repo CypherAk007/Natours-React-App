@@ -27,6 +27,12 @@ export default {
       },
       backgroundImage:{
         'mountain':"url('/src/assets/img/nat-4')",
+      },
+      screens:{
+        'big-desktop':{'max':'112.5em'},
+        'tab-land':{'max':'75em'},
+        'tab-port':{'max':'56.25em'},
+        'phone':{'max':'37.5em'},
       }
     },
   },
