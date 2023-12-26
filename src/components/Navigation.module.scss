@@ -1,3 +1,31 @@
+// Mixin
+@mixin respond($breakpoint){
+    @if $breakpoint == phone{
+        @media(max-width: 37.5em) {           //600px
+            // Whole code block will come here 
+            @content
+        };
+    }
+    @if $breakpoint == tab-port{
+        @media(max-width: 56.25em) {           //900px
+            // Whole code block will come here 
+            @content
+        };
+    }
+    @if $breakpoint == tab-land{
+        @media(max-width: 75em) {           //1200px
+            // Whole code block will come here 
+            @content
+        };
+    }
+    @if $breakpoint == big-desktop{
+        @media(max-width: 112.5em) {           //1800px
+            // Whole code block will come here 
+            @content
+        };
+    }
+}
+
 .navigation{
     &__checkbox{
         display: none;
@@ -15,6 +43,15 @@
         box-shadow: 0 1rem 3rem rgba(black,0.1);
         text-align: center;
         cursor: pointer;
+
+        @include respond(tab-port){
+            top: 4rem;
+            right:4rem;
+        }
+        @include respond(phone){
+            top: 3rem;
+            right:3rem;
+        }
     }
 
     &__background{
@@ -30,6 +67,15 @@
         transition: transform .4s cubic-bezier(0.83, 0, 0.17, 1);
         // // Remove this 
         // transform: scale(80);
+        @include respond(tab-port){
+            top: 4.5rem;
+            right:4.5rem;
+        }
+
+        @include respond(phone){
+            top: 3.5rem;
+            right:3.5rem;
+        }
     }
 
     &__nav{

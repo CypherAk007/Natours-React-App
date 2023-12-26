@@ -10,7 +10,7 @@ const Stories = ()=>{
     return (
 
         <div className={`${classes['stories']} -bg--color-grey-light-1  px-0 relative  h-[110%]`}>
-            <div className={`${classes['stories__video']} absolute top-0 left-0 h-[110%] w-[100%] -z-1 overflow-hidden opacity-20 `}>
+            <div className={`${classes['stories__video']} absolute top-0 left-0 h-[100%] w-[100%] -z-1 overflow-hidden opacity-20 `}>
 
                 <video className={`${classes['bg-video__content']}`} autoPlay muted loop>
                     <source src={video1} type="video/mp4"></source>

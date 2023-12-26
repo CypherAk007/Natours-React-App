@@ -28,7 +28,10 @@ $color-tertiary-dark:#5643fa;
     &__cards{
         display: flex;
         flex-wrap: wrap;
+        // flex-direction: column;
+
         justify-content: center;
+        align-items: center;
         // padding: 20px;
         gap:10rem;
 
