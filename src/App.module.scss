@@ -2,3 +2,90 @@
     // background-color: var(--color-primary);
     
 }
+// MEDIA QUERY MANAGER
+/*
+0-600px: phone 
+600px - 900px : tablet potrait
+900px - 1200px : tablet landscape
+1200px - 1800px : Our noraml styles apply
+1800px+ : Big Desktop
+*/
+
+// 1-> WAY OF USING MIXIN
+
+// @mixin respond-phone{
+//     @media (max-width:600){
+//         @content
+//     };
+// }
+
+// 2-> Better way of using (by passing the device name)
+// $breakpoint argument choices
+// - phone 
+// - tab-port 
+// - tab- land 
+// - big-desktop
+
+// ** rem dont work for media querries so we use em - 1em-> 16px **
+
+
+/*
+// From CSS File How to call Below mixin ?
+    @include respond(phone){
+        // Code Block to be passed for mixin 
+        font-size: 50%;
+    }
+*/
+
+
+// Mixin
+@mixin respond($breakpoint){
+    @if $breakpoint == phone{
+        @media(max-width: 37.5em) {           //600px
+            // Whole code block will come here 
+            @content
+        };
+    }
+    @if $breakpoint == tab-port{
+        @media(max-width: 56.25em) {           //900px
+            // Whole code block will come here 
+            @content
+        };
+    }
+    @if $breakpoint == tab-land{
+        @media(max-width: 75em) {           //1200px
+            // Whole code block will come here 
+            @content
+        };
+    }
+    @if $breakpoint == big-desktop{
+        @media(max-width: 112.5em) {           //1800px
+            // Whole code block will come here 
+            @content
+        };
+    }
+}
+
+// // 1rem 10px 10px/16px = 62.5%
+// html{
+//     // @include respond(phone){
+//     //     font-size: 50%; 
+//     // }
+
+//     @include respond(tab-land){
+//         font-size: 56.25%;  //1rem=9px, 9/16 = 50%
+//     }
+
+//     @include respond(tab-port){
+//         font-size: 50%; //1rem = 8px , 8/16 = 50%
+//     }
+
+//     @include respond(phone){
+//             font-size: 30%; 
+//         }
+    
+//     @include respond(big-desktop){
+//         font-size: 75%;  //1rem =12, 12/16=75%
+//     }
+    
+// }
